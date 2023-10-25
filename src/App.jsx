@@ -12,7 +12,6 @@ import { useSelector } from "react-redux";
 import { authName } from "./redux/slices/auth";
 import EducationPage from "./pages/admin/education";
 import UserLayout from "./components/layout/user";
-import MessagePage from "./pages/admin/message";
 import NotFoundPage from "./pages/NotFound";
 
 function App() {
@@ -40,7 +39,6 @@ function App() {
           <Route path="/portfolios" element={<PortfoliosPage />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/users" element={<UsersPage />} />
-          <Route path="/messages" element={<MessagePage />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

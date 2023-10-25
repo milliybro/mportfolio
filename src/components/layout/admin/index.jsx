@@ -5,12 +5,10 @@ import {
   ClockCircleOutlined,
   DatabaseOutlined,
   PlusSquareOutlined,
-  LogoutOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   ReadOutlined,
   UsergroupAddOutlined,
-  WhatsAppOutlined,
   HomeOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme, Modal } from "antd";
@@ -94,11 +92,6 @@ const AdminLayout = () => {
               key: "/skills",
               icon: <PlusSquareOutlined />,
               label: <Link to="/skills">Skills</Link>,
-            },
-            {
-              key: "/messages",
-              icon: <WhatsAppOutlined />,
-              label: <Link to="/messages">Messages</Link>,
             },
             {
               key: "1",
