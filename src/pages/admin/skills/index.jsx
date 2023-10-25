@@ -11,6 +11,7 @@ import {
   Space,
   Table,
   message,
+  Progress,
 } from "antd";
 
 import {
@@ -94,20 +95,20 @@ const SkillsPage = () => {
 
   const columns = [
     {
-      title: "Name",
+      title: "Skill Name",
       dataIndex: "name",
       key: "name",
+    },
+    {
+      title: "Fullname",
+      render: (_, row) =>
+      `${row?.user?.firstName ?? ""} ${row?.user?.lastName ?? ""}`,
     },
     {
       title: "Percent",
       dataIndex: "percent",
       key: "percent",
-      render: (data) => <p style={{ marginBottom: "0px" }}>{data}%</p>,
-    },
-    {
-      title: "Fullname",
-      render: (_, row) =>
-        `${row?.user?.firstName ?? ""} ${row?.user?.lastName ?? ""}`,
+      render: (data) => <Progress percent={data} status="active" />,
     },
     {
       title: "Action",
