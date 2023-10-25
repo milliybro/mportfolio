@@ -144,7 +144,7 @@ const SkillsPage = () => {
         title={() => (
           <Fragment>
             <Flex align="center" justify="space-between" gap={36}>
-              <h1 className="skills-title">Skills</h1>
+              <h1 className="skills-title">Skills({total})</h1>
               <Input
                 className="search-input"
                 value={search}
@@ -156,11 +156,7 @@ const SkillsPage = () => {
                 Add skill
               </Button>
             </Flex>
-            <div>
-              <p className="search-result-text">
-                About <span>{total}</span> skills match
-              </p>
-            </div>
+
           </Fragment>
         )}
         pagination={false}
