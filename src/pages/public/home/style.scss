@@ -179,3 +179,29 @@ body {
   color: #a1a1a1;
   padding: 10px 20px;
 }
+
+.ant-drawer-content-wrapper{
+   width: 500px !important;
+}
+.drawer{
+   h1,p{
+      text-align: center;
+      margin-top: 20px;
+   }
+}
+
+.message-img{
+   width: 450px;
+   margin-bottom: 20px;
+}
+
+.message-btn{
+   background-color: #ffc700;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   padding: 20px 100px;
+   border: none;
+   border-radius: 15px;
+   margin-top: 40px;
+}
