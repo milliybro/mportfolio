@@ -4,7 +4,9 @@ import "./style.scss";
 const HomePage = () => {
   return (
     <Fragment>
-      <main>
+      <div style={{
+        marginTop: '50px'
+      }}>
   <div className="intro">
     <h1>A Web Developer</h1>
     <p>I am a web developer and I love to create websites.</p>
@@ -34,7 +36,7 @@ const HomePage = () => {
     </div>
     <img src="https://media.licdn.com/dms/image/D4D03AQEqrWuRDdj0sQ/profile-displayphoto-shrink_800_800/0/1694850129494?e=2147483647&v=beta&t=v11IRGhk2HFNL76unrG8lXokNmTAfW_o_-LY_K4y90E" alt="me"/>
   </div>
-</main>
+</div>
     </Fragment>
   );
 };
